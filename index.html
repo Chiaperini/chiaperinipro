@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Construção</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Added height for devices with resolution > 1024px */
+        }
+
+        .column {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .left-column {
+            background-color: #f9f9f9;
+            width: 45%; /* Updated width to 45% */
+        }
+
+        .right-column {
+            background-color: #e9e9e9;
+            width: 45%; /* Updated width to 45% */
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column left-column">
+            <h1>Em Construção</h1>
+        </div>
+        <div class="column right-column">
+            <img src="imagens/feche-as-mulheres-sorridentes-trabalhando1.webp">
+            
+        </div>
+    </div>
+</body>
+</html>
