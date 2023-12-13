@@ -26,6 +26,11 @@
             flex: 1;
             padding: 10px;
             text-align: center;
+            height: 90%; /* Added height to make columns equal */
+            display: flex; /* Added display flex */
+            flex-direction: column; /* Added flex direction column */
+            justify-content: center; /* Added justify content center */
+            align-items: center; /* Added align items center */
         }
 
         .left-column {
@@ -44,6 +49,12 @@
             color: #333;
         }
 
+        .whatsapp-icon {
+            width: 50px;
+            height: 50px;
+            margin-top: 10px;
+        }
+
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -58,11 +69,14 @@
 <body>
     <div class="container">
         <div class="column left-column">
-            <h1>Em Construção</h1>
+            <img src="imagens/Chiaperini_Pro_Logo.webp" style="width: 80%;max-width: 550px;">
+            <h1>Site em desenvolvimento</h1>
+            <a href="https://api.whatsapp.com/send?phone=551639549400" target="_blank">
+                <img src="icone-whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+            </a>
         </div>
         <div class="column right-column">
             <img src="imagens/feche-as-mulheres-sorridentes-trabalhando1.webp">
-            
         </div>
     </div>
 </body>
